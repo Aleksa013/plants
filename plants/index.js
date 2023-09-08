@@ -82,7 +82,7 @@ const menu = document.querySelector('.header-nav-menu'),
     el.innerHTML =`
     <div class="prices-open ">
                     <div class="open-header"><span>${obj.name} </span> <img class="dropup" 
-                    src="./img/price_btn_arrow.png" alt="arrow-up"></div>
+                    src="./plants/img/price_btn_arrow.png" alt="arrow-up"></div>
                     <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                     <div class="open-price"><span>${obj.price} </span>/ per hour</div>
                     <button>Order</button>
@@ -166,7 +166,7 @@ const menu = document.querySelector('.header-nav-menu'),
             for(let i =0; i < dropdowns.length; i++){
                 if(e.target.classList[1] == dropdowns[i].classList[1]){
                     ratesItem[0].innerHTML = `<span>${pricesItems[i].name}</span>
-                    <img class ="dropdown basics" src="./img/price-accordion-btn.png" alt="arrow-down">`;
+                    <img class ="dropdown basics" src="./plants/img/price-accordion-btn.png" alt="arrow-down">`;
                     renderRate(priceBox, pricesItems[i]);
                 }
             }
@@ -174,7 +174,7 @@ const menu = document.querySelector('.header-nav-menu'),
             contact.scrollIntoView();
         }else if(e.target.className == 'dropup'){
             ratesItem[0].innerHTML = `<span>Basics</span> 
-            <img class ="dropdown basics" src="./img/price-accordion-btn.png" alt="arrow-down">`;
+            <img class ="dropdown basics" src="./plants/img/price-accordion-btn.png" alt="arrow-down">`;
             priceBox.innerHTML=` `;
         }
     });
